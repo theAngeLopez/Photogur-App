@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   get 'pictures' => 'pictures#index'
+  get 'pictures/:id' => 'pictures#show', as: 'picture'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
